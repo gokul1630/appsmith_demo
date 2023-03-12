@@ -3,7 +3,7 @@
   "pluginId": "js-plugin",
   "unpublishedAction": {
     "name": "getData",
-    "fullyQualifiedName": "JSObject1.getData",
+    "fullyQualifiedName": "StudentReport.getData",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,7 +14,7 @@
       "userPermissions": []
     },
     "pageId": "Page1",
-    "collectionId": "Page1_JSObject1",
+    "collectionId": "Page1_StudentReport",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_JSObject1.getData",
+  "id": "Page1_StudentReport.getData",
   "deleted": false,
   "gitSyncId": "640dbcec4851313b636d99db_640dcb70d788300dbeb99a64"
 }

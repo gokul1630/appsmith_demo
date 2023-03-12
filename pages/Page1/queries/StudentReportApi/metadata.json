@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Api1",
+    "name": "StudentReportApi",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -48,7 +48,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_Api1",
+  "id": "Page1_StudentReportApi",
   "deleted": false,
   "gitSyncId": "640dbcec4851313b636d99db_640dcabbd788300dbeb99a62"
 }

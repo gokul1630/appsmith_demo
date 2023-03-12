@@ -43,15 +43,15 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 5,
-              "bottomRow": 37,
+              "topRow": 6,
+              "bottomRow": 38,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
               "chartData": {
                 "8jd7bn9f6h": {
                   "seriesName": "Sales",
-                  "data": "{{JSObject1.getData()}}"
+                  "data": "{{StudentReport.getData()}}"
                 }
               },
               "animateLoading": true,
@@ -62,7 +62,7 @@
                   "key": "onDataPointClick"
                 }
               ],
-              "leftColumn": 3,
+              "leftColumn": 2,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -130,7 +130,7 @@
               "onDataPointClick": "",
               "key": "pa63eel3fd",
               "isDeprecated": false,
-              "rightColumn": 28,
+              "rightColumn": 27,
               "widgetId": "utr26b0vjd",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "minWidth": 450,
@@ -142,7 +142,7 @@
               "isLoading": false,
               "responsiveBehavior": "fill",
               "yAxisName": "Revenue($)",
-              "chartName": "Sales Report",
+              "chartName": "Students Report",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Product Line",
               "chartType": "PIE_CHART"
@@ -152,8 +152,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Page1_Api1",
-              "name": "Api1",
+              "id": "Page1_StudentReportApi",
+              "name": "StudentReportApi",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
