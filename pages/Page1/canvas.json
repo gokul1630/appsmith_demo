@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 380,
+          "bottomRow": 460,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -28,14 +28,8 @@
           "children": [
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "setAdaptiveYMin": false,
-              "widgetName": "Chart1",
+              "widgetName": "Chart2",
               "allowScroll": false,
-              "dynamicPropertyPathList": [
-                {
-                  "key": "chartType"
-                }
-              ],
               "displayName": "Chart",
               "iconSVG": "/static/media/icon.6adbe31ed817fc4bfd66f9f0a6fc105c.svg",
               "searchTags": [
@@ -43,13 +37,13 @@
                 "visuals",
                 "visualisations"
               ],
-              "topRow": 6,
-              "bottomRow": 38,
+              "topRow": 14,
+              "bottomRow": 46,
               "parentRowSpace": 10,
               "type": "CHART_WIDGET",
               "hideCard": false,
               "chartData": {
-                "8jd7bn9f6h": {
+                "xo4be3dasg": {
                   "seriesName": "Sales",
                   "data": "{{StudentReport.getData()}}"
                 }
@@ -57,12 +51,8 @@
               "animateLoading": true,
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 14.0625,
-              "dynamicTriggerPathList": [
-                {
-                  "key": "onDataPointClick"
-                }
-              ],
-              "leftColumn": 2,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 5,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -77,7 +67,7 @@
                   "key": "fontFamily"
                 },
                 {
-                  "key": "chartData.8jd7bn9f6h.data"
+                  "key": "chartData.xo4be3dasg.data"
                 }
               ],
               "customFusionChartConfig": {
@@ -127,11 +117,10 @@
                   }
                 }
               },
-              "onDataPointClick": "",
-              "key": "pa63eel3fd",
+              "key": "dmcanwi4ui",
               "isDeprecated": false,
-              "rightColumn": 27,
-              "widgetId": "utr26b0vjd",
+              "rightColumn": 29,
+              "widgetId": "1ouiw55phn",
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
               "minWidth": 450,
               "isVisible": true,
@@ -142,10 +131,138 @@
               "isLoading": false,
               "responsiveBehavior": "fill",
               "yAxisName": "Revenue($)",
-              "chartName": "Students Report",
+              "chartName": "Todo Report",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "xAxisName": "Product Line",
               "chartType": "PIE_CHART"
+            },
+            {
+              "widgetName": "Text1",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 20,
+              "bottomRow": 27,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 14.0625,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 36,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "text"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "Title: {{TodoApi.data.title}}",
+              "key": "fqct2qnj1g",
+              "isDeprecated": false,
+              "rightColumn": 52,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "tnq5yixf59",
+              "minWidth": 450,
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 20,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 24,
+              "fontSize": "1rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "Select1",
+              "isFilterable": true,
+              "displayName": "Select",
+              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+              "labelText": "Select Todo",
+              "searchTags": [
+                "dropdown"
+              ],
+              "topRow": 11,
+              "bottomRow": 18,
+              "parentRowSpace": 10,
+              "labelWidth": 5,
+              "type": "SELECT_WIDGET",
+              "serverSideFiltering": false,
+              "hideCard": false,
+              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( StudentReport.getDropDownData()[0]))(Select1.options, Select1.serverSideFiltering) }}",
+              "animateLoading": true,
+              "parentColumnSpace": 14.0625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onOptionChange"
+                },
+                {
+                  "key": "onDropdownClose"
+                }
+              ],
+              "leftColumn": 36,
+              "dynamicBindingPathList": [
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "options"
+                },
+                {
+                  "key": "defaultOptionValue"
+                }
+              ],
+              "labelPosition": "Top",
+              "onDropdownClose": "{{TodoApi.run()}}",
+              "options": "{{StudentReport.getDropDownData()}}",
+              "placeholderText": "Select Todo",
+              "isDisabled": false,
+              "key": "cul6942qfy",
+              "labelTextSize": "0.875rem",
+              "isRequired": false,
+              "isDeprecated": false,
+              "rightColumn": 49,
+              "dynamicHeight": "FIXED",
+              "widgetId": "yj6q0w85xc",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "minWidth": 450,
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelAlignment": "left",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "onOptionChange": "{{storeValue('todo_id',Select1.selectedOptionValue)}}",
+              "minDynamicHeight": 4
             }
           ]
         },
@@ -157,6 +274,16 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Page1_TodoApi",
+              "name": "TodoApi",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "appsmith.store.todo_id"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]
